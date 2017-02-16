@@ -1,3 +1,4 @@
+
 import static org.junit.Assert.*;
 
 import org.junit.After;
@@ -5,7 +6,7 @@ import org.junit.Test;
 
 import com.opensymphony.xwork2.interceptor.annotations.Before;
 
-public class MyJunitFirstTest {
+public class Test2 {
 	
 	
 	@Before
