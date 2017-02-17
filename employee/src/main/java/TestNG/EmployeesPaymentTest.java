@@ -1,12 +1,8 @@
-import static org.junit.Assert.*;
+package TestNG;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
-public class Test1 {
+public class EmployeesPaymentTest {
 	EmployeesPayment emp = new EmployeesPayment();
 
 	@BeforeClass
@@ -25,14 +21,19 @@ public class Test1 {
 		System.out.println("Before");
 	}
 
-	@After
-	public void tearDown() throws Exception {
+	@After 
+	public void tearDown() throws Exception { 
 		System.out.println("After");
 	}
 
 	@Test
 	public void testCalculateSalary() {
 		assertEquals(1040, emp.calculateSalary(650, 365, 25));
+	}
+
+	private void assertEquals(int i, int calculateSalary) {
+		// TODO Auto-generated method stub
+		
 	}
 
 	@Test
@@ -59,5 +60,4 @@ public class Test1 {
 	public void testAdditionalFee() {
 		assertEquals(250, emp.additionalFee(false, 50, 5));
 	}
-
 }
